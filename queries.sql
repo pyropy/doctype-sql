@@ -2,7 +2,7 @@
 SELECT *
 FROM   twitter.tweets,
        twitter.users
-WHERE  twitter.tweets.user = "mark"
+WHERE  twitter.tweets.user = "Mark"
 ORDER  BY twitter.tweets.id DESC
 LIMIT  30;
 
@@ -10,6 +10,6 @@ LIMIT  30;
 SELECT *
 FROM   twitter.tweets,
        twitter.users
-WHERE  twitter.tweets.user = "mark"
+WHERE  twitter.tweets.user = "Mark"
 ORDER  BY twitter.tweets.id DESC
 LIMIT  30, 30;  
