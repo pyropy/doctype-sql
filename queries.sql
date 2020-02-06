@@ -5,7 +5,7 @@ SELECT *
 FROM   tweets T
        JOIN users U
          ON U.username = T.user
-WHERE  T.user = "mark"
+WHERE  T.user = "Mark"
 ORDER  BY T.id DESC
 LIMIT  30;
 
@@ -14,6 +14,6 @@ SELECT *
 FROM   tweets T
        JOIN users U
          ON U.username = T.user
-WHERE  T.user = "mark"
+WHERE  T.user = "Mark"
 ORDER  BY T.id DESC
 LIMIT  30, 30;  
