@@ -12,7 +12,7 @@ FROM   users U
                ON ( FU.id = F.following )
        INNER JOIN tweets T
                ON( T.user = F.id )
-WHERE  U.username = "mark"
+WHERE  U.username = "Mark"
 ORDER  BY T.id DESC
 LIMIT  30;  
 
@@ -30,7 +30,7 @@ FROM   users U
                ON ( FU.id = F.following )
        INNER JOIN tweets T
                ON( T.user = F.id )
-WHERE  U.username = "mark"
-       AND T.id < 30 -- e.g. 30 is last post id that we've loaded
+WHERE  U.username = "Mark"
+       AND T.id < 30 -- e.g. 30 is last post id that we've loaded if last fetch
 ORDER  BY T.id DESC
 LIMIT  30;
